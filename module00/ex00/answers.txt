@@ -1,0 +1,20 @@
+# Output a list of installed packages and their versions.
+pip list
+
+# Show the package metadata of numpy.
+$ python3
+>>> from importlib import metadata
+>>> numpy_metadata = metadata.metadata("numpy")
+>>> list(numpy_metadata)
+>>> numpy_metadata["Home-page"]
+>>> numpy_metadata["Requires-Python"]
+
+# Remove the package numpy.
+pip uninstall numpy
+
+# (Re)install the package numpy.
+pip install numpy
+
+# Freeze your python packages and their versions in a requirements.txt file you
+have to turn-in
+pip freeze > requirements.txt
