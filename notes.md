@@ -15,6 +15,9 @@
 | Python documentation | https://docs.python.org/3/ |
 | W3 School | https://www.w3schools.com/ |
 | Mozilla Docs | https://developer.mozilla.org/en-US/ |
+| Virtualenv | https://virtualenv.pypa.io/en/latest/ |
+| virtualenvwrapper | https://virtualenvwrapper.readthedocs.io/en/latest/ |
+| Requests | https://pypi.org/project/requests/ |
 
 ### Temp block
 ```code
