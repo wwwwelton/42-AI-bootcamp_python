@@ -18,6 +18,7 @@
 | Virtualenv | https://virtualenv.pypa.io/en/latest/ |
 | virtualenvwrapper | https://virtualenvwrapper.readthedocs.io/en/latest/ |
 | Requests | https://pypi.org/project/requests/ |
+| Docstring Conventions | https://peps.python.org/pep-0257/#what-is-a-docstring |
 
 ### Temp block
 ```code
