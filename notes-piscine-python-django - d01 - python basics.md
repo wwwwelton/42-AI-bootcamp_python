@@ -399,3 +399,89 @@ if __name__ == '__main__':
     elif 'Cass' in mamas_and_papas:
         print('Cass is in the Mamas & Papas')
 ```
+
+##### LOOPS
+
+###### WHILE
+```python
+if __name__ == '__main__':
+    my_list = [1, 2, 3, 4, 5]
+
+    print('my_list:')
+    i = 0
+    while i < len(my_list):
+        print(my_list[i])
+        i += 1
+```
+
+###### FOR
+```python
+if __name__ == '__main__':
+    print('my_range:')
+    for element in range(5):
+        print(element)
+```
+
+###### FOR WITH DICTIONARY
+```python
+if __name__ == '__main__':
+    my_dict = {
+            'France': 'fr',
+            'Italy': 'it',
+            'Spain': 'es',
+            'Japan': 'jp',
+    }
+    print('my_dict:')
+    for key, value in my_dict.items():
+        print(key, ':', value)
+```
+
+##### COMPREHENSION
+
+###### LIST COMPREHENSION
+List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+```python
+if __name__ == '__main__':
+    l = []
+    for i in range(10):
+        if i % 2 == 0:
+            l.append(i ** 2)
+    print(l)
+
+    # The return value is a new list, leaving the old list unchanged.
+    l = [i ** 2 for i in range(10) if i % 2 == 0]
+    print(l)
+```
+
+##### I/O FILE SYSTEM
+
+###### OPEN
+```python
+if __name__ == '__main__':
+    filename = 'my_file.txt'
+
+    f = open(filename, 'w')
+    f.write('Hard as a rock !')
+    f.close()
+```
+
+###### OPEN WITH
+```with open``` is a context manager in Python that is used to open a file and create a context in which the file will be used. The advantage of using ```with open``` is that it automatically takes care of closing the file after the indented block of code is executed, even if an exception is raised. This way, you don't have to explicitly close the file, which can help you avoid resource leaks.
+```python
+if __name__ == '__main__':
+    filename = 'my_file.txt'
+
+    with open(filename, 'r') as f:
+        for line in f:
+            print(line)
+```
+
+##### PROGRAM ARGUMENTS
+
+###### ARGV
+```python
+import sys
+
+if __name__ == '__main__':
+    print(sys.argv)
+```
